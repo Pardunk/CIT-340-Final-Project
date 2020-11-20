@@ -1,0 +1,30 @@
+Members: Drake Collier, Paige Mitchell, and Jared Mosley
+
+Name: "Mouse of the House"
+
+Genre: Puzzle Platformer
+
+Setting: Inside of a house
+
+Lore: A mouse needs to get to the kitchen so it can eat some cheese.
+
+Similar Games: 
+-BoxBoy!
+-Inside
+
+Features:
+-Needed:
+	-Boxes
+	-Obstacles
+	-Health Bar
+	-The ability to spawn boxes (progression system)
+	-A counter for how many boxes can be spawned
+	-Enemies
+-Wanted But Not Quite Needed:
+	-Combat
+	-Hidden powerups
+	
+Personal Focus:
+-Drake: Making a level that's not too short or too empty.
+-Paige: Implementing a good progression system.
+-Jared: Getting better at scripting and sprite work.
