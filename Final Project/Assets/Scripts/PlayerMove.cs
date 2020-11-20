@@ -11,13 +11,21 @@ public class PlayerMove : MonoBehaviour
     public Dictionary<string, GameObject> prefabDatabase;//aka hash table aka Map
     private bool canJump = false;
     Rigidbody2D rb;
+
+
+    public float minYValue = -20;
+    Vector3 respawnPoint;
+    public void SetRespawnPoint(Vector3 newRespawnPoint)
+    {
+        respawnPoint = newRespawnPoint;
+    }
+
+
     SpriteRenderer spriteRenderer;
     ParticleSystem pS;
     public float boxRate = .75f;
     public GameObject box;
-
     bool canSpawnBox = true;
-
     void spawnBox()
     {
         canSpawnBox = true;
@@ -32,6 +40,7 @@ public class PlayerMove : MonoBehaviour
         Transform boxHoldingPos= transform.Find("boxHoldingPos");
         Debug.Log(boxHoldingPos.position);
         Debug.Log(boxHoldingPos.localPosition);
+        boxHoldingPos.localPosition = new Vector3(1.5f, 0, 0);
 
     }
 
@@ -40,6 +49,11 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
             canJump = true;
+        if (transform.position.y < minYValue)
+        {
+            transform.position = respawnPoint;
+            rb.velocity = Vector2.zero;
+        }
     }
     void FixedUpdate()
     {
