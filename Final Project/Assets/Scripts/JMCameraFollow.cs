@@ -1,13 +1,15 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class JMCameraFollow : MonoBehaviour
 {
     public GameObject target;
 
     public float followSpeed = 0.5f;
     public bool followYaxis = false;
+
 
 
     // Update is called once per frame
