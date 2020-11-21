@@ -34,7 +34,12 @@ public class P_ButtonScript : MonoBehaviour
 
     public void Back()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("P_MainMenu");
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("P_MainMenu");
     }
 }
 
