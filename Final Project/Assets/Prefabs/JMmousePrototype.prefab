@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4748494599547546582}
   - component: {fileID: 8774496041073487236}
   - component: {fileID: 4832977558804692568}
-  - component: {fileID: 6725641512967029949}
+  - component: {fileID: 5162149739871305494}
   m_Layer: 0
   m_Name: JMmousePrototype
   m_TagString: Untagged
@@ -153,7 +153,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6725641512967029949
+--- !u!114 &5162149739871305494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpPower: 250
+  minYValue: -9
   boxRate: 0.75
   box: {fileID: 2977850013908964810, guid: d2a275f64e2204141b43a78763b7f0f5, type: 3}
 --- !u!1 &7543415067707510070

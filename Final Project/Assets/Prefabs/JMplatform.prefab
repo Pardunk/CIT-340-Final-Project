@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2025103772771898201}
   - component: {fileID: 2025103772771898206}
-  - component: {fileID: 2025103772771898207}
+  - component: {fileID: -7426258025107951664}
   m_Layer: 0
   m_Name: JMplatform
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2025103772771898204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.28476024, y: -3.91, z: 0}
-  m_LocalScale: {x: 11.83, y: 0.4, z: 1}
+  m_LocalScale: {x: 5.192515, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2025103772771898207
+--- !u!61 &-7426258025107951664
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,5 +106,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.2, y: 2.93}
+  m_Size: {x: 5.12, y: 5.12}
   m_EdgeRadius: 0
