@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//Script by Drake Collier
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
