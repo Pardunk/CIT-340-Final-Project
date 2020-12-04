@@ -47,3 +47,9 @@ TagManager:
   - name: p_background
     uniqueID: 1550802025
     locked: 0
+  - name: background
+    uniqueID: 4211659163
+    locked: 0
+  - name: New Layer
+    uniqueID: 4089887771
+    locked: 0
