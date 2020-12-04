@@ -63,10 +63,15 @@ public class JMPlayerMove : MonoBehaviour
         if (movement > .01f)
         {
             spriteRenderer.flipX = false;
+            Transform boxHoldingPos= transform.Find("boxHoldingPos");
+            boxHoldingPos.localPosition = new Vector3(1.5f, 0, 0);
+
         }
-        if(movement < -.01f)
+        if (movement < -.01f)
         {
             spriteRenderer.flipX = true;
+            Transform boxHoldingPos = transform.Find("boxHoldingPos");
+            boxHoldingPos.localPosition = new Vector3(-1.5f, 0, 0);
         }
         if (canJump)
         {
