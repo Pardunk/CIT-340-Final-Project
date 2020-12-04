@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class JMPlayerMove : MonoBehaviour
 {
-
+   
     public float speed = 5;
     public float jumpPower = 250;
     public Dictionary<string, GameObject> prefabDatabase;//aka hash table aka Map
