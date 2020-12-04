@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class P_CoinCounter : MonoBehaviour
-{
+{ // Paige worked on P_CoinCounter script and UI
     public static P_CoinCounter instance;
     public Text text;
     int score;

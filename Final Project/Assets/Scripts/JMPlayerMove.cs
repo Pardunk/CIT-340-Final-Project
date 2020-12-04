@@ -55,6 +55,14 @@ public class JMPlayerMove : MonoBehaviour
             rb.velocity = Vector2.zero;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other) //Paige added ontriggerenter2d fucntion to destroy coins once they been collected
+    {
+        if(other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject); 
+        }
+    }
     void FixedUpdate()
     {
         float movement = Input.GetAxis("Horizontal");
