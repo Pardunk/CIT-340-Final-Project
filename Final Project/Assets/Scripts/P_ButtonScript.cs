@@ -41,6 +41,11 @@ public class P_ButtonScript : MonoBehaviour
     {
         SceneManager.LoadScene("P_MainMenu");
     }
+
+    public void Instructions()
+    {
+        SceneManager.LoadScene("JM_Instructions");
+    }
 }
 
 
