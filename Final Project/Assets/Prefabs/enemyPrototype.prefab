@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8335232968669417546}
   - component: {fileID: -706755550673608965}
   - component: {fileID: -8330882018924767}
+  - component: {fileID: -6852019470562954023}
   m_Layer: 10
   m_Name: enemyPrototype
   m_TagString: Untagged
@@ -120,3 +121,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.56
+--- !u!114 &-6852019470562954023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6583877991769350166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6202782a1804c37429b0ecb9dc869e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xRange: 0
+  speed: 0
