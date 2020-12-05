@@ -11,8 +11,7 @@ public class JMPlayerMove : MonoBehaviour
     public Dictionary<string, GameObject> prefabDatabase;//aka hash table aka Map
     private bool canJump = false;
     Rigidbody2D rb;
-
-
+    AudioSource jumpSound;
     public float minYValue = -20;
     Vector3 respawnPoint;
     public void SetRespawnPoint(Vector3 newRespawnPoint)
@@ -58,6 +57,9 @@ public class JMPlayerMove : MonoBehaviour
     }
     void FixedUpdate()
     {
+
+        jumpSound = GetComponent<AudioSource>();
+
         float movement = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(movement * speed, rb.velocity.y);
         if (movement > .01f)
@@ -75,6 +77,7 @@ public class JMPlayerMove : MonoBehaviour
         }
         if (canJump)
         {
+            jumpSound.Play();
             GameObject feet = transform.GetChild(0).gameObject;
 
            
