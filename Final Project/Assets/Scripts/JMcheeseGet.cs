@@ -8,15 +8,11 @@ public class JMcheeseGet : MonoBehaviour
 
     AudioSource victory;
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-       
-  
         victory = GetComponent<AudioSource>();
+        
         victory.Play();
-
-
         Debug.Log("Cheese Get");
         // SceneManager.LoadScene("next level");
     }
