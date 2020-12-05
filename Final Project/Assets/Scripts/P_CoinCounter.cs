@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class P_CoinCounter : MonoBehaviour
 { // Paige worked on P_CoinCounter script and UI
     public static P_CoinCounter instance;
-    public Text text;
+    public Text scoreText;
+    public Text levelText;
     int score;
     int level;
     // Start is called before the first frame update
@@ -16,33 +17,33 @@ public class P_CoinCounter : MonoBehaviour
         {
             instance = this;
         }
-       
-        
+
+        levelText.text = "Level: " + level.ToString();
     }
 
     public void ScoreChange(int changeCoins)
     {
         score += changeCoins;
-        text.text = "Score: " + score.ToString();
-        //Show level 1
-        if(score == 10)
-        {
-            level += 1;
-            text.text = "Level: " + level.ToString();
-        }
-        //show level 2
-        if(score == 20)
-        {
-            level += 1;
-            text.text = "Level: " + level.ToString();
-        }
+        scoreText.text = "Score: " + score.ToString();
+
         //show level 3
         if(score == 30)
         {
             level += 1;
-            text.text = "Level: " + level.ToString();
+            levelText.text = "Level: " + level.ToString();
         }
-
+        //show level 2
+        else if(score == 20)
+        {
+            level += 1;
+            levelText.text = "Level: " + level.ToString();
+        }
+        //Show level 1
+        else if(score == 10)
+        {
+            level += 1;
+            levelText.text = "Level: " + level.ToString();
+        }
     }
 
     // Update is called once per frame
