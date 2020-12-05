@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class d_Enemy : MonoBehaviour
+public class d_EnemyMove : MonoBehaviour
 {
     public float xRange;
     public float speed;

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class JMPlayerMove : MonoBehaviour
 {
-
+   
     public float speed = 5;
     public float jumpPower = 250;
     public Dictionary<string, GameObject> prefabDatabase;//aka hash table aka Map
@@ -54,6 +54,14 @@ public class JMPlayerMove : MonoBehaviour
         {
             transform.position = respawnPoint;
             rb.velocity = Vector2.zero;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) //Paige added ontriggerenter2d fucntion to destroy coins once they been collected
+    {
+        if(other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject); 
         }
     }
     void FixedUpdate()
