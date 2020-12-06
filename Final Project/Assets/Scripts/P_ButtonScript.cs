@@ -8,7 +8,6 @@ public class P_ButtonScript : MonoBehaviour
     //Paige worked on the Main Menu Script
     public void Play()
     {
-        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Paige_Scene");
     }
 

@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 public class P_CoinCounter : MonoBehaviour
 { // Paige worked on P_CoinCounter script and UI
-    public static GameObject instance = null;
+    public static P_CoinCounter instance;
     public Text scoreText;
     public Text levelText;
-    [HideInInspector]public int score;
+    int score;
     int level;
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("Score"))
-            ScoreChange((int)PlayerPrefs.GetFloat("Experience"));
-
-        instance = this.gameObject;
+        if (instance == null)
+        {
+            instance = this;
+        }
 
         levelText.text = "Level: " + level.ToString();
     }
