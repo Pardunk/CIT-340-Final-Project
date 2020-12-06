@@ -7,6 +7,8 @@ public class P_SwitchtoLevel2 : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        PlayerPrefs.SetFloat("Score", P_CoinCounter.instance.GetComponent<P_CoinCounter>().score);
+
         SceneManager.LoadScene("Jared_Scene");
     }
 }
