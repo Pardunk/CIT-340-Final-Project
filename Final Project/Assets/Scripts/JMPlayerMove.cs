@@ -20,16 +20,6 @@ public class JMPlayerMove : MonoBehaviour
         respawnPoint = newRespawnPoint;
     }
 
-    //Added by Drake Collier
-    public void Respawn()
-    {
-        GameObject[] boxes = GameObject.FindGameObjectsWithTag("Box");
-        //Get rid of all boxes spawned on respawn
-        for (var i = 0; i < boxes.Length; ++i)
-            Destroy(boxes[i]);
-
-        transform.position = respawnPoint;
-    }
 
     SpriteRenderer spriteRenderer;
     ParticleSystem pS;
@@ -52,7 +42,7 @@ public class JMPlayerMove : MonoBehaviour
         Debug.Log(boxHoldingPos.position);
         Debug.Log(boxHoldingPos.localPosition);
         boxHoldingPos.localPosition = new Vector3(1.5f, 0, 0);
-        SetRespawnPoint(transform.position);
+
     }
 
     // Update is called once per frame
