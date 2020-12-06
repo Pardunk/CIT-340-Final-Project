@@ -12,6 +12,7 @@ public class JMPlayerMove : MonoBehaviour
     private bool canJump = false;
     Rigidbody2D rb;
     AudioSource jumpSound;
+    AudioSource coinSnd;
     public float minYValue = -20;
     Vector3 respawnPoint;
     public void SetRespawnPoint(Vector3 newRespawnPoint)
@@ -60,6 +61,8 @@ public class JMPlayerMove : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Coin"))
         {
+            coinSnd = other.gameObject.GetComponent<AudioSource>();//audio scripting added by Jared M
+            coinSnd.Play();
             Destroy(other.gameObject); 
         }
     }
