@@ -9,7 +9,7 @@ public class P_Coin : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            P_CoinCounter.instance.ScoreChange(coinValue);
+            P_CoinCounter.instance.GetComponent<P_CoinCounter>().ScoreChange(coinValue);
             
         }
     }
