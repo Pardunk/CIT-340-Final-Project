@@ -8323,6 +8323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1920599763}
   levelText: {fileID: 577041794}
+  score: 0
 --- !u!4 &1769432109
 Transform:
   m_ObjectHideFlags: 0
@@ -8548,6 +8549,16 @@ PrefabInstance:
     - target: {fileID: 2732913495058678225, guid: c42cab2f45f51486b8d4020cae2c5e5d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555476250934096652, guid: c42cab2f45f51486b8d4020cae2c5e5d,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: afc43055c9c3f47ffb05130abfbe1de2, type: 3}
+    - target: {fileID: 6555476250934096652, guid: c42cab2f45f51486b8d4020cae2c5e5d,
+        type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
