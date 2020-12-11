@@ -406,7 +406,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 114, y: 83}
-  m_SizeDelta: {x: 721.7, y: 270}
+  m_SizeDelta: {x: 1032.8, y: 293.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225853945
 MonoBehaviour:
@@ -429,7 +429,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 17
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -440,7 +440,25 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Coin Sprite:https://assetstore.unity.com/packages/2d/gui/icons/2d-pixel-item-asset-pack-99645
+  m_Text: 'Sprites:
+
+    Coin Sprite:https://assetstore.unity.com/packages/2d/gui/icons/2d-pixel-item-asset-pack-99645
+
+
+    Audio:
+
+    Background
+    Music: https://www.youtube.com/watch?v=Slgqa7QU_9c
+
+    Coin Sound: https://freesound.org/people/Leszek_Szary/sounds/146723/
+
+    Goal
+    Music: https://www.youtube.com/watch?v=PZ_7ipJ6Cx8
+
+    Jump: https://www.youtube.com/watch?v=nK71NEluAqA
+
+    Thud:
+    https://freesound.org/people/farbin/sounds/36791/'
 --- !u!222 &1225853946
 CanvasRenderer:
   m_ObjectHideFlags: 0

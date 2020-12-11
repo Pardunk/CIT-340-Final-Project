@@ -7,10 +7,9 @@ public class d_EnemyMove : MonoBehaviour
 {
     public float xRange;
     public float speed;
-
     private float oldPosition = 0;
     private float xPosition1 = 0;
-    private float xPosition2 = 0;
+    private float xPosition2 = 0; 
     private SpriteRenderer sprite;
 
     // Start is called before the first frame update

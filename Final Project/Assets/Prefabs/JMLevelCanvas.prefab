@@ -33,10 +33,10 @@ RectTransform:
   m_Father: {fileID: 8570930883446209729}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -141, y: -30}
-  m_SizeDelta: {x: 276.8, y: 64.4}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 929, y: 572}
+  m_SizeDelta: {x: 276.8, y: 64.400024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8570930882839995395
 CanvasRenderer:
@@ -129,7 +129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 324.48004, y: 399}
+  m_AnchoredPosition: {x: 324.48004, y: 572}
   m_SizeDelta: {x: 166.34, y: 59.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8570930883298107060
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 8570930883446209727}
   - component: {fileID: 8570930883446209726}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: JMLevelCanvas
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

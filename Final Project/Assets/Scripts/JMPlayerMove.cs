@@ -8,7 +8,6 @@ public class JMPlayerMove : MonoBehaviour
    
     public float speed = 5;
     public float jumpPower = 250;
-    public Dictionary<string, GameObject> prefabDatabase;//aka hash table aka Map
     private bool canJump = false;
     [HideInInspector]public bool canMove = true;
     Rigidbody2D rb;
