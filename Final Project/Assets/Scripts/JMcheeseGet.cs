@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//script by Jared Mosley
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
