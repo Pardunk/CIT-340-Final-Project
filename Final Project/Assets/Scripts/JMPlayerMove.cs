@@ -10,6 +10,7 @@ public class JMPlayerMove : MonoBehaviour
     public float jumpPower = 250;
     public Dictionary<string, GameObject> prefabDatabase;//aka hash table aka Map
     private bool canJump = false;
+    [HideInInspector]public bool canMove = true;
     Rigidbody2D rb;
     AudioSource jumpSound;
     AudioSource coinSnd;
@@ -53,6 +54,7 @@ public class JMPlayerMove : MonoBehaviour
         Debug.Log(boxHoldingPos.localPosition);
         boxHoldingPos.localPosition = new Vector3(1.5f, 0, 0);
         SetRespawnPoint(transform.position);
+        canMove = true;
     }
 
     // Update is called once per frame
@@ -81,21 +83,28 @@ public class JMPlayerMove : MonoBehaviour
 
         jumpSound = GetComponent<AudioSource>();
 
-        float movement = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(movement * speed, rb.velocity.y);
-        if (movement > .01f)
+        //Added by Drake:
+        //Checks if the player can move
+        //This is necessary for disabling movement when a level is beaten
+        if (canMove)
         {
-            spriteRenderer.flipX = false;
-            Transform boxHoldingPos= transform.Find("boxHoldingPos");
-            boxHoldingPos.localPosition = new Vector3(1.5f, 0, 0);
+            float movement = Input.GetAxis("Horizontal");
+            rb.velocity = new Vector2(movement * speed, rb.velocity.y);
+            if (movement > .01f)
+            {
+                spriteRenderer.flipX = false;
+                Transform boxHoldingPos= transform.Find("boxHoldingPos");
+                boxHoldingPos.localPosition = new Vector3(1.5f, 0, 0);
 
+            }
+            if (movement < -.01f)
+            {
+                spriteRenderer.flipX = true;
+                Transform boxHoldingPos = transform.Find("boxHoldingPos");
+                boxHoldingPos.localPosition = new Vector3(-1.5f, 0, 0);
+            }
         }
-        if (movement < -.01f)
-        {
-            spriteRenderer.flipX = true;
-            Transform boxHoldingPos = transform.Find("boxHoldingPos");
-            boxHoldingPos.localPosition = new Vector3(-1.5f, 0, 0);
-        }
+
         if (canJump)
         {
             jumpSound.Play();
