@@ -16,6 +16,7 @@ public class JMPlayerMove : MonoBehaviour
     AudioSource coinSnd;
     public float minYValue = -20;
     Vector3 respawnPoint;
+    Animator anim;
     public void SetRespawnPoint(Vector3 newRespawnPoint)
     {
         respawnPoint = newRespawnPoint;
@@ -55,6 +56,7 @@ public class JMPlayerMove : MonoBehaviour
         boxHoldingPos.localPosition = new Vector3(1.5f, 0, 0);
         SetRespawnPoint(transform.position);
         canMove = true;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -95,7 +97,6 @@ public class JMPlayerMove : MonoBehaviour
                 spriteRenderer.flipX = false;
                 Transform boxHoldingPos= transform.Find("boxHoldingPos");
                 boxHoldingPos.localPosition = new Vector3(1.5f, 0, 0);
-
             }
             if (movement < -.01f)
             {
@@ -103,6 +104,13 @@ public class JMPlayerMove : MonoBehaviour
                 Transform boxHoldingPos = transform.Find("boxHoldingPos");
                 boxHoldingPos.localPosition = new Vector3(-1.5f, 0, 0);
             }
+            if (Mathf.Abs(movement) > .01f)
+            {
+                anim.SetBool("isWalking", true);
+            }
+            else
+                anim.SetBool("isWalking", false);
+
         }
 
         if (canJump)

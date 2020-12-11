@@ -44,6 +44,8 @@ GameObject:
   - component: {fileID: 4832977558804692568}
   - component: {fileID: 5162149739871305494}
   - component: {fileID: 6555476250934096652}
+  - component: {fileID: 3446086650552786142}
+  - component: {fileID: 4822776228565664370}
   m_Layer: 8
   m_Name: JMmousePrototype
   m_TagString: Untagged
@@ -168,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpPower: 250
+  canMove: 1
   minYValue: -9
   boxRate: 0.75
   box: {fileID: 2977850013908964810, guid: d2a275f64e2204141b43a78763b7f0f5, type: 3}
@@ -267,6 +270,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!111 &3446086650552786142
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085669681121008934}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5d896c171b8974fc7b735f9c67e233a1, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &4822776228565664370
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085669681121008934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e21c6f5a3f2b437dbacbfc88f8a2a93, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7543415067707510070
 GameObject:
   m_ObjectHideFlags: 0
