@@ -1,5 +1,5 @@
 ﻿//script based on the platformer script from class modified by Jared Mosley
-
+//Paige added ontriggerenter2d fucntion to destroy coins once they been collected
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -74,6 +74,7 @@ public class JMPlayerMove : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Coin"))
         {
+            
             coinSnd = other.gameObject.GetComponent<AudioSource>();//audio scripting added by Jared M
             coinSnd.Play();
             Destroy(other.gameObject); 

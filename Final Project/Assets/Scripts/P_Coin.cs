@@ -11,6 +11,7 @@ public class P_Coin : MonoBehaviour
         {
             P_CoinCounter.instance.GetComponent<P_CoinCounter>().ScoreChange(coinValue);
             
+
         }
     }
 }
